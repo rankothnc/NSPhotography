@@ -3,7 +3,7 @@ import "../assets/styles/footer.css";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="footer">
       <p>Dambulla, Sri Lanka</p>
       <p>nuwan.pri@gmail.com</p>
       <p>+94 71 123 2345</p>
