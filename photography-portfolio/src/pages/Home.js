@@ -1,20 +1,13 @@
 import React from "react";
 import "../assets/styles/home.css";
-import "../components/Footer";
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <div>
-      <header>
-        <h1>NUWAN SIRIWARDHANA PHOTOGRAPHY</h1>
-        <nav>
-          <a href="#about">About</a>
-          <a href="">Photography</a>
-          <a href="">Contact</a>
-        </nav>
-      </header>
-      <section>
+    <div className="home">
+      <Header />
+      <section id="about">
         <h2>About</h2>
         <p>Preferred name</p>
         <p>
@@ -24,16 +17,16 @@ const Home = () => {
           aliquip ex ea commodo consequat.
         </p>
       </section>
-      <section>
+      <section id="photography">
         <h2>Photography</h2>
-        <div>
-            <div>Wildlife</div>
-            <div>Landscape</div>
-            <div>Location</div>
-            <div>Travel</div>
+        <div className="categories">
+          <div>Wildlife</div>
+          <div>Landscape</div>
+          <div>Location</div>
+          <div>Travel</div>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
