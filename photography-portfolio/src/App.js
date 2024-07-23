@@ -1,18 +1,18 @@
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
 
 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       
-        <p>
-         You did a greate job😍!
-        </p>
-        
-        
-      </header>
-    </div>
+   <Router>
+    <Routes>
+      <Route path="/" exact Component={Home} />
+      <Route path="/contact" exact Component={Contact} />
+    </Routes>
+   </Router>
   );
 }
 
