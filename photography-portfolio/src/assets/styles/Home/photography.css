@@ -1,0 +1,129 @@
+.photography-section {
+  background-color: #f9f9f9;
+  padding: 2rem 4rem 5%;
+  text-align: center;
+}
+
+.photography-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.category {
+  background-color: #e0e0e0;
+  width: 220px;
+  height: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  transition: transform 0.6s ease-in-out, background-color 0.6s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.category.wildlife {
+  background-image: url("../../images/Home_wildlife.jpg");
+}
+
+.category.landscape {
+  background-image: url("../../images/Home_Landscape.jpg");
+}
+
+.category.location {
+  background-image: url("../../images/Home_Location.jpg");
+}
+
+.category.travel {
+  background-image: url("../../images/Home_Travelling.jpg");
+}
+
+.category::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.category:hover::before {
+  opacity: 1;
+}
+
+.category:hover {
+  transform: scale(1.1);
+}
+
+.category:hover .placeholder {
+  transform: scale(1.1);
+}
+
+.placeholder {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: transform 0.6s ease-in-out;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .category {
+    width: 180px;
+    height: 270px;
+  }
+
+  .photography-section h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .categories {
+    justify-content: center; /* Center the categories */
+  }
+
+  .category {
+    width: 45%; /* Adjust width for smaller screens */
+    margin-bottom: 1rem;
+    height: auto; /* Adjust height to auto for better scaling */
+  }
+
+  .photography-section h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .category {
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
+
+  .photography-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .category {
+    font-size: 1rem;
+  }
+}
