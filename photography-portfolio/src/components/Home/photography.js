@@ -1,5 +1,6 @@
 import React from "react";
 import "../../assets/styles/Home/photography.css";
+import { Link } from "react-router-dom";
 
 const Photography = () => {
   return (
@@ -7,7 +8,7 @@ const Photography = () => {
       <h2>Photography</h2>
       <div className="categories">
         <div className="category wildlife">
-          <div className="placeholder">Wildlife</div>
+        <Link to="/wildlife" className="placeholder">Wildlife</Link>
         </div>
         <div className="category landscape">
           <div className="placeholder">Landscape</div>
