@@ -10,11 +10,17 @@ function Wildlife() {
       <div className='photography-header'>
         <h1>WILDLIFE</h1>
       </div>
-        <section>
-            <div>Topic</div>
-            <div>Topic</div>
-            <div>Topic</div>
-        </section>
+      <section className='topics-section'>
+      <div className='topic'>
+        <h2>Topic 1</h2>
+      </div>
+      <div className='topic'>
+        <h2>Topic 2</h2>
+      </div>
+      <div className='topic'>
+        <h2>Topic 3</h2>
+      </div>
+    </section>
         <Footer/>
     </div>
   )
