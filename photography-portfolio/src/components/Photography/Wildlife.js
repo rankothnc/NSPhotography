@@ -7,6 +7,9 @@ function Wildlife() {
   return (
     <div className='photography-container'>
       <Navbar/>
+      <div className='photography-header'>
+        <h1>WILDLIFE</h1>
+      </div>
         <section>
             <div>Topic</div>
             <div>Topic</div>
