@@ -3,6 +3,10 @@ import Navbar from "../../Navbar";
 import Footer from "../../Footer";
 import "../../../assets/styles/Photography/topic.css";
 
+
+// refer to the onenote. landing issue. when landing wild page and relevant toipc page, it does not show the navbar. 
+
+
 //import all images from the folder
 const importAll = (r) => r.keys().map(r);
 const images = importAll(require.context("../../../assets/images/Topic1",false,/\.(png|jpe?g|svg)$/))
