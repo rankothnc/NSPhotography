@@ -11,7 +11,7 @@ const Photography = () => {
         <Link to="/wildlife" className="placeholder">Wildlife</Link>
         </div>
         <div className="category landscape">
-          <div className="placeholder">Landscape</div>
+        <Link to="/landscape" className="placeholder">Landscape</Link>
         </div>
         <div className="category location">
           <div className="placeholder">Location</div>

@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Wildlife from "./components/Photography/Wildlife.js";
 import Topic from "./components/Photography/Topics/Topics.js";
+import Landscape from "./components/Photography/Landscape.js";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/wildlife" element={<Wildlife />} />
             <Route path="/wildlife/topic" element={<Topic />} />
+            <Route path="/landscape" element={<Landscape />} />
           </Routes>
         </main>
       </div>
