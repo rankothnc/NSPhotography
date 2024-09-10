@@ -14,10 +14,10 @@ const Photography = () => {
         <Link to="/landscape" className="placeholder">Landscape</Link>
         </div>
         <div className="category location">
-          <div className="placeholder">Location</div>
+        <Link to="/location" className="placeholder">Location</Link>
         </div>
         <div className="category travel">
-          <div className="placeholder">Travel</div>
+        <Link to="/travel" className="placeholder">Travel</Link>
         </div>
       </div>
     </section>
